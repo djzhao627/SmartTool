@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="radix_item">
+        <item>2进制</item>
+        <item>8进制</item>
+        <item>10进制</item>
+        <item>16进制</item>
+    </string-array>
+</resources>

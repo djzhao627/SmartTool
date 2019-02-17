@@ -1,0 +1,11 @@
+<litepal>
+    <dbname value="smart_tool" />
+    <version value="1" />
+
+    <list>
+        <mapping class="com.djzhao.smarttool.db.weather.Province" />
+        <mapping class="com.djzhao.smarttool.db.weather.City" />
+        <mapping class="com.djzhao.smarttool.db.weather.County" />
+        <mapping class="com.djzhao.smarttool.db.chooseproblem.ChooseProblemItem" />
+    </list>
+</litepal>

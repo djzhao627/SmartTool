@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/qrcode_visiting_card_bottom_nav_card"
+        android:icon="@drawable/ic_visiting_card"
+        android:title="名片" />
+    <item
+        android:id="@+id/qrcode_visiting_card_bottom_nav_diy"
+        android:icon="@drawable/ic_diy_textarea"
+        android:title="自定义二维码" />
+
+</menu>

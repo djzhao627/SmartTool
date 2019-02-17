@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="关于">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/dashboard_nav_menu_about"
+                    android:icon="@drawable/dashboard_nav_about"
+                    android:title="帮助与关于" />
+            </group>
+        </menu>
+    </item>
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/dashboard_nav_menu_exit"
+            android:icon="@drawable/dashboard_nav_exit"
+            android:title="退出程序" />
+    </group>
+</menu>

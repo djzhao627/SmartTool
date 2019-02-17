@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#1fff"
+	android:gravity="center_vertical"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<View
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"/>
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="3"
+			android:background="@drawable/flashlight_dialog_bg"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_margin="15dp"
+				android:textSize="16sp"
+				android:textColor="#38adff"
+				android:text="设置频率"/>
+
+			<SeekBar
+				android:id="@+id/flashlight_dialog_layout_seek_bar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:max="9"
+				android:minLines="1"
+				android:layout_margin="5dp"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:layout_marginTop="15dp"
+				android:background="#e4e4e4"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="40dp">
+
+				<Button
+					android:id="@+id/flashlight_dialog_layout_cancel"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_marginLeft="5dp"
+					android:background="@null"
+					android:text="取消"
+					android:gravity="center"
+					android:layout_weight="1.0"
+					android:textColor="#7d7d7d"
+					android:textSize="16sp"/>
+
+				<View
+					android:layout_width="1px"
+					android:layout_height="match_parent"
+					android:background="#e4e4e4"/>
+
+				<Button
+					android:id="@+id/flashlight_dialog_layout_start"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:background="@null"
+					android:text="启动"
+					android:gravity="center"
+					android:layout_weight="1.0"
+					android:textColor="#38adff"
+					android:textSize="16sp"
+					android:layout_marginRight="5dp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<View
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

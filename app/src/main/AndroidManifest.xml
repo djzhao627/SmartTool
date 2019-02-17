@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.djzhao.smarttool">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+
+    <permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+
+        <!-- weather -->
+        <activity android:name=".activity.AboutActivity" />
+        <activity
+            android:name=".activity.weather.MainActivity"
+            android:launchMode="singleTask" />
+
+        <!-- torch -->
+        <activity
+            android:name=".activity.weather.WeatherActivity"
+            android:launchMode="singleTask" />
+
+        <!-- transcoding -->
+        <activity
+            android:name=".activity.torch.MainActivity"
+            android:launchMode="singleTask" />
+
+        <!-- morsecode -->
+        <activity
+            android:name=".activity.transcoding.TranscodingActivity"
+            android:launchMode="singleTask" />
+
+        <!-- weather -->
+        <activity
+            android:name=".activity.morsecode.MorseCodeActivity"
+            android:launchMode="singleTask" />
+
+        <!-- torch -->
+        <service
+            android:name=".service.weather.AutoUpdateService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".broadcast.torch.TorchWidgetProvider"
+            android:label="简约手电">
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/torch_app_widget_provider_info" />
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="cc.trv.simpletorch.action.TORCH_WIDGET_CLICK" />
+            </intent-filter>
+        </receiver>
+        <activity android:name=".activity.ruler.RulerMainActivity" />
+        <activity android:name=".activity.shortlink.ShortLinkMainActivity" />
+        <activity android:name=".activity.htmlget.HtmlGetMainActivity" />
+        <activity android:name=".activity.htmlget.HtmlCodeActivity" />
+        <activity android:name=".activity.randomnumber.RandomNumberMainActivity" />
+
+        <activity android:name=".activity.qrcodevisitacard.QRCodeVisitingCardMainActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.djzhao.smarttool.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+        <activity android:name=".activity.radix.RadixMainActivity" />
+        <activity android:name=".activity.github.GithubAddressMainActivity" />
+        <activity android:name=".activity.chooseproblem.ChooseProblemMainActivity" />
+        <activity android:name=".activity.chooseproblem.ChooseProblemListActivity" />
+        <activity android:name=".activity.chooseproblem.ChooseProblemDetailListActivity" />
+    </application>
+
+</manifest>

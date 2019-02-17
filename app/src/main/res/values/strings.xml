@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">一个工具箱</string>
+    <string name="intro_cn">复杂的世界里，工具箱有一个就够了。</string>
+    <string name="intro_en">In a complex world, a toolbox is enough.</string>
+</resources>
