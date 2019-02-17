@@ -16,7 +16,7 @@
 - 编码/解码（BASE64、MD5、SHA1）
 - 摩斯码
 - 屏幕直尺
-- 短网址生产
+- 短网址生成
 - 网页源码获取
 - 随机数生成
 - 进制转换（2/8/10/16）
@@ -43,19 +43,15 @@
 
 ## 预览
 
-**logo**
-
-![logo](https://img-blog.csdnimg.cn/20190217154243948.png)
-
 **启动界面**
 
-![启动图](https://img-blog.csdnimg.cn/20190217154712241.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RqemhhbzYyNw==,size_16,color_FFFFFF,t_70)
+![启动图](https://github.com/djzhao627/SmartTool/blob/master/Preview/startup.png)
 
 **首页**
 
-![首页](https://img-blog.csdnimg.cn/2019021715500223.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RqemhhbzYyNw==,size_16,color_FFFFFF,t_70)
+![首页](https://github.com/djzhao627/SmartTool/blob/master/Preview/main.png)
 
 **关于页**
 
-![关于页](https://img-blog.csdnimg.cn/20190217155118152.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2RqemhhbzYyNw==,size_16,color_FFFFFF,t_70)
+![关于页](https://github.com/djzhao627/SmartTool/blob/master/Preview/about.png)
 
